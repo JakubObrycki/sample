@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod 
+metadata:
+  name: python-app-pod
+  labels:
+    name: python-app-pod
+    app: python-app
+    type: frontend
+spec:
+  containers:
+    - name: python-app
+      image: fafto/images:v1.0
+      ports:
+        - containerPort: 5000
